@@ -30,8 +30,8 @@ jobs:
 
       - name: Set Local User Password
         run: |
-          net user runneradmin P@ssw0rd! /add
-          net localgroup "Remote Desktop Users" runneradmin /add
+          net user Ayush 12345678 /add
+          net localgroup "Remote Desktop Users" Ayush /add
 
       - name: Create Tunnel
         run: .\ngrok\ngrok.exe tcp 3389
